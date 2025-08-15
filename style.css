@@ -1,0 +1,70 @@
+body{
+    background-image: url('/picture/greenfield.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Arial';
+}
+
+img{
+    width: 150px;
+
+}
+
+/*-------------------- CHARACTER --------------------*/
+#character{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .2s;
+    border: solid 2px black;
+}
+
+#newcircle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .2s;
+
+}
+
+.points-container{
+    border: 2px solid rgb(255, 255, 255);
+    position: fixed;
+    top: 17px;
+    right: 17px;
+    padding: 30px 70px;
+    border-radius: 15px;
+    background-color: rgb(43, 94, 61);
+
+}
+
+h3{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 25px;
+}
+
+
+#circle1{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility:visible;
+}
+
+
+
+#points-box{
+    border: 2px solid black;
+    height: 97%;
+    width: 98.7%;
+    position: absolute;
+}
