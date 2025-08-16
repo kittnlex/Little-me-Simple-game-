@@ -133,3 +133,22 @@ circleCreation();
 
     
 // }
+
+// ------------------- BUTTONS FUNCTIONS ------------------- //
+
+function continueBtn(){
+    const contiBtn = document.getElementById('startBtn');
+    const startBtn = document.getElementById('start2Btn');
+
+    contiBtn.parentElement.style.display = `none`;
+    startBtn.parentElement.style.display = `flex`;
+}
+
+function startBtn(){
+    const startBtn = document.getElementById('start2Btn');
+    const back = document.getElementById('overlayGame');
+    
+    back.style.display = `none`;
+    startBtn.parentElement.style.display = `none`;
+
+}
