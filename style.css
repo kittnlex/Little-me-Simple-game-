@@ -4,20 +4,79 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Arial';
+
 }
 
-img{
-    width: 150px;
 
+img{
+    width: 120px;
+
+}
+
+/*-------------------- ALERT CUSTOMIZATION --------------------*/
+
+#overlayGame{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 999;
+}
+.alertBox{
+    padding: 50px;
+    background-color:blueviolet;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+#stepsGame{
+    padding: 50px;
+    background-color:blueviolet;
+    color: white;
+    border-radius: 20px;
+    display: none;
+    flex-direction:column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+button{
+
+    color: white;
+    border-radius: 10px;
+    width: 95px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: hsl(271, 76%, 70%);
+    border-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 70%);
+    color: blueviolet;
 }
 
 /*-------------------- CHARACTER --------------------*/
+
 #character{
     position: absolute;
     top: 0;
     left: 0;
     transition: .2s;
-    border: solid 2px black;
 }
 
 #newcircle{
@@ -57,14 +116,9 @@ h3{
     position: absolute;
     top: 0;
     left: 0;
-    visibility:visible;
+    visibility: visible;
 }
 
 
 
-#points-box{
-    border: 2px solid black;
-    height: 97%;
-    width: 98.7%;
-    position: absolute;
-}
+
